@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 import FileService from './FileService';
 import sha1 from 'sha1';
 import path from 'path';
@@ -41,7 +41,7 @@ class CifraService {
     const tamanho_alfabeto = 26;
     let result = '';
     for (let posicao = 0; posicao < cifrado.length; posicao++){
-      const codigoAsc = cifrado.charCodeAt(i);
+      const codigoAsc = cifrado.charCodeAt(posicao);
       let char = String.fromCharCode(codigoAsc);
 
       if (codigoAsc >= 44 && codigoAsc <= 59 || codigoAsc === 32)
@@ -74,7 +74,7 @@ class CifraService {
   }
 
   async consultarApi() {
-    return await axios.get(this.url_consulta);
+    return await axios.get(this.url_consulta).catch(err => console.log(`Ocorreu um erro de conexão com a API \n Erro: ${err.message}`));
   }
 
   async salvarRespostaApi(){
