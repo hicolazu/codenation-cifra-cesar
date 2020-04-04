@@ -1,0 +1,21 @@
+{
+  "name": "cifra_de_cesar",
+  "version": "1.0.0",
+  "description": "Desafio Java AceleraDev",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "author": "Henrico Lazuroz Moura de Almeida",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "jsonfile": "^6.0.1",
+    "sha1": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "sucrase": "^3.13.0"
+  }
+}
