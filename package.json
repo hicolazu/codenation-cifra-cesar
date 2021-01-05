@@ -9,7 +9,7 @@
   "author": "Henrico Lazuroz Moura de Almeida",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "jsonfile": "^6.0.1",
     "sha1": "^1.1.1"
